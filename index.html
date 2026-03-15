@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECOCAJAS | Soluciones de Empaque Ecológico</title>
+
+<title>ECOCAJAS | Empaques Ecológicos</title>
+
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+
+<header class="header">
+
 <div class="container nav">
 
-<img src="ecocajas.jpeg" class="logo">
+<div class="logo">
+<img src="ecocajas.jpeg">
+<span>ECOCAJAS</span>
+</div>
 
 <nav>
-<a href="#inicio">Inicio </a>
+
+<a href="#inicio">Inicio</a>
 <a href="#nosotros">Nosotros</a>
 <a href="#productos">Productos</a>
-<a href="#sostenibilidad">Sostenibilidad</a>
+<a href="#beneficios">Beneficios</a>
 <a href="#contacto">Contacto</a>
+
 </nav>
 
 </div>
+
 </header>
+
 
 
 <section id="inicio" class="hero">
 
-<div class="hero-content">
+<div class="hero-container">
 
-<h1>Empaques Ecológicos para un Futuro Sostenible</h1>
+<h1>Empaques Ecológicos<br> para Empresas Modernas</h1>
 
-<p>En ECOCAJAS fabricamos cajas ecológicas resistentes, reciclables y pensadas para cuidar el planeta.</p>
+<p>
+Soluciones de embalaje sostenibles para ecommerce, logística y negocios que quieren cuidar el planeta.
+</p>
 
-<button onclick="scrollToSection()">Ver Productos</button>
+<div class="hero-buttons">
+
+<a href="#productos" class="btn-primary">Ver Productos</a>
+
+<a href="#contacto" class="btn-secondary">Cotizar</a>
+
+</div>
 
 </div>
 
@@ -45,13 +68,28 @@
 
 <section id="nosotros" class="section">
 
+<div class="container grid-2">
+
+<div>
 <h2>Sobre ECOCAJAS</h2>
 
 <p>
-ECOCAJAS es una empresa dedicada a la fabricación de cajas ecológicas y soluciones de empaque sostenibles.
-Nuestro objetivo es ayudar a empresas a reducir su impacto ambiental utilizando materiales reciclables
-y procesos responsables con el medio ambiente.
+En ECOCAJAS desarrollamos soluciones de empaque ecológicas diseñadas para reducir el impacto ambiental sin comprometer calidad o resistencia.
 </p>
+
+<p>
+Trabajamos con materiales reciclados, procesos responsables y tecnología moderna para ayudar a empresas a ser más sostenibles.
+</p>
+</div>
+
+<div class="info-box">
+🌱 Materiales reciclables  
+📦 Alta resistencia  
+🚚 Ideal para ecommerce  
+♻️ Producción sostenible
+</div>
+
+</div>
 
 </section>
 
@@ -63,19 +101,28 @@ y procesos responsables con el medio ambiente.
 
 <div class="product-grid">
 
-<div class="card">
+<div class="product">
+<div class="product-img"></div>
 <h3>Cajas para Envíos</h3>
-<p>Ideales para ecommerce y logística. Resistentes y reciclables.</p>
+<p>Ideales para ecommerce y logística.</p>
 </div>
 
-<div class="card">
+<div class="product">
+<div class="product-img"></div>
 <h3>Cajas Personalizadas</h3>
-<p>Diseños personalizados para tu marca con materiales sostenibles.</p>
+<p>Diseños con tu marca.</p>
 </div>
 
-<div class="card">
+<div class="product">
+<div class="product-img"></div>
 <h3>Cajas para Alimentos</h3>
-<p>Empaques ecológicos seguros para alimentos.</p>
+<p>Empaques seguros y ecológicos.</p>
+</div>
+
+<div class="product">
+<div class="product-img"></div>
+<h3>Cajas Industriales</h3>
+<p>Alta resistencia para transporte.</p>
 </div>
 
 </div>
@@ -84,32 +131,53 @@ y procesos responsables con el medio ambiente.
 
 
 
-<section id="sostenibilidad" class="section green">
+<section id="beneficios" class="section benefits">
 
-<h2>Nuestro Compromiso</h2>
+<h2>Por qué elegir ECOCAJAS</h2>
 
-<p>
-Utilizamos materiales reciclados y procesos de producción responsables.
-Cada caja que producimos ayuda a reducir residuos y a proteger nuestro planeta.
-</p>
+<div class="benefits-grid">
+
+<div class="benefit">
+<h3>🌍 Eco Friendly</h3>
+<p>Materiales reciclados que reducen el impacto ambiental.</p>
+</div>
+
+<div class="benefit">
+<h3>⚡ Producción rápida</h3>
+<p>Fabricación eficiente para pedidos empresariales.</p>
+</div>
+
+<div class="benefit">
+<h3>📦 Personalización</h3>
+<p>Diseños adaptados a tu marca.</p>
+</div>
+
+<div class="benefit">
+<h3>🏭 Alta calidad</h3>
+<p>Materiales resistentes para transporte seguro.</p>
+</div>
+
+</div>
 
 </section>
 
 
 
-<section id="contacto" class="section">
+<section id="contacto" class="section contact">
 
-<h2>Contacto</h2>
+<h2>Solicita una Cotización</h2>
 
-<form>
+<form class="contact-form">
 
 <input type="text" placeholder="Nombre" required>
 
 <input type="email" placeholder="Email" required>
 
+<input type="text" placeholder="Empresa">
+
 <textarea placeholder="Mensaje"></textarea>
 
-<button type="submit">Enviar</button>
+<button type="submit">Enviar solicitud</button>
 
 </form>
 
@@ -119,11 +187,36 @@ Cada caja que producimos ayuda a reducir residuos y a proteger nuestro planeta.
 
 <footer>
 
-<p>© 2026 ECOCAJAS - Empaques Ecológicos</p>
+<div class="footer-container">
+
+<div>
+<h3>ECOCAJAS</h3>
+<p>Empaques sostenibles para un mundo mejor.</p>
+</div>
+
+<div>
+<h4>Empresa</h4>
+<p>Nosotros</p>
+<p>Productos</p>
+<p>Sostenibilidad</p>
+</div>
+
+<div>
+<h4>Contacto</h4>
+<p>Email: contacto@ecocajas.com</p>
+<p>Tel: +34 000 000 000</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 ECOCAJAS
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
