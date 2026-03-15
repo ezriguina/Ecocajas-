@@ -335,3 +335,29 @@ display:none;
 }
 
 }
+.product{
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+.product-details{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.5s ease;
+margin-top:10px;
+text-align:left;
+}
+
+.product.active .product-details{
+max-height:200px;
+}
+
+.product-details ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.product-details li{
+margin-bottom:5px;
+}
